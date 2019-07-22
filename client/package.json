@@ -15,7 +15,8 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "react-select": "^1.2.1",
-    "react-stockcharts": "^0.7.6"
+    "react-stockcharts": "^0.7.6",
+    "snyk": "^1.161.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -28,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
@@ -36,5 +39,6 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0"
-  }
+  },
+  "snyk": true
 }
